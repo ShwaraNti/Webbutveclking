@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+article{
+    display: flex;
+}
+
+section{
+    border: 10px rgb(0, 164, 0);
+    padding: 20px;
+    text-align: center;
+    background: green;
+    margin: 10px;
+}

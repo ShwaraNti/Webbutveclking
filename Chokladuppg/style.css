@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    background: #fff;
+}
+
+section {
+    margin: 10px;
+    background: brown;
+    color: #eee;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px #aaa;
+}
+
+header {
+    color: #fff;
+    font: 2em georgia;
+}
+
+header, footer {
+    padding: .8rem;
+}
+
+header h2 {
+    margin: 0;
+}
+
+div {
+    height: 140px;
+    background-size: cover;
+    background-position: center;
+}
+
+#Mars {
+    background: url(Images/mars.jpg) center;
+    background-size: cover;
+}
+
+#Bounty {
+    background: url(Images/bounty.jpg) center;
+    background-size: cover;
+}
+
+#Twix {
+    background: url(Images/twix.jpg) center;
+    background-size: cover;
+}
+
+#Co-Co {
+    background: url(Images/coco.png) center;
+    background-size: cover;
+}
+
+#Japp {
+    background: url(Images/japp.jpg) center;
+    background-size: cover;
+}
+
+footer p {
+    font-family: 'fira sans', 'sans-serif';
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@media (min-width: 600px){
+    div{
+        display: flex;
+    }
+
+    div section{
+        flex: 1;
+    }
+}

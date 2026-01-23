@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 4fr 1fr 2fr;
+    grid-template-areas: 
+    "heat heat usual usual"
+    "inside rififi rififi bank";
+
+}
+
+
+.heat{
+    grid-area: heat;
+    background-image: url(images/heat.jpg);
+    background-size: cover;
+    display: grid;
+    align-items: end;
+    justify-content: end;
+}
+
+.usual{
+    grid-area: usual;
+    background-image: url(images/usualsuspects.jpg);
+    background-size: cover;
+    display: grid;
+    align-items: end;
+    justify-content: end;
+}
+
+.bank{
+    grid-area: bank;
+    background-image: url(images/bankjob.jpg);
+    background-size: cover;
+    display: grid;
+    align-items: end;
+    justify-content: end;
+}
+
+.inside{
+    grid-area: inside;
+    background-image: url(images/insideman.jpg);
+    background-size: cover;
+    display: grid;
+    align-items: end;
+    justify-content: end;
+}
+
+.rififi{
+    grid-area: rififi;
+    background-image: url(images/rififi.jpg);
+    background-size: cover;
+    display: grid;
+    align-items: end;
+    justify-content: end;
+}
+

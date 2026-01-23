@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+article{
+    border: 4px solid red;
+    display: flex; 
+}
+
+section{
+    border: 4px solid blue;
+    flex: 1;
+}
+
+#large{
+    flex: 2;
+}
+
+.mainnav a:hover{
+    background: red;
+}
