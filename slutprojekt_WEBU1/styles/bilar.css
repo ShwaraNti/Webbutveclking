@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    background-color: #fff;
+    color: #1a1a1a; 
+    line-height: 1.8; 
+    margin: 0;
+    padding: 0;
+}
+
+.detaljer{
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    gap: 40px;
+    padding: 0 20px
+}
+
+
+.bilder{
+    flex: 2;
+    font-size: 24px;
+}
+
+
+
+.bilder p{
+    margin-bottom: 25px;
+    line-height: 1.7;
+    color: #333;
+    font-style: italic;
+}
+
+.bil-info{
+    flex: 1
+}
+
+.pris{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.bil-specs{
+    border-top: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.spec-saker{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+
+
+ .spec-saker span{
+    font-weight: bold;
+ }
+
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #1a1a1a; 
+    color: white;
+}   
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; 
+}
+
+nav ul li{
+    margin-left: 20px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.nav-btn:hover {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border: 1px solid #ffffff;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-left: 0;
+    }
+
+    .detaljer {
+        flex-direction: column; 
+        margin: 20px auto;
+    }
+
+    .bilder, .bil-info {
+        flex: none;
+        width: 100%;
+    }
+
+    .bilder img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .bilder {
+        font-size: 18px; 
+    }
+
+    .bil-info h1 {
+        font-size: 1.8rem;
+        margin-top: 10px;
+    }
+}
+

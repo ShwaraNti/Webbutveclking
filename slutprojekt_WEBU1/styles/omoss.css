@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Behåll din header-stil här (lägger bara till lite padding för navigationen) */
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #1a1a1a; /* Mörk bakgrund som matchar exklusiva bilar */
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Mellanrum mellan knapparna */
+}
+
+/* Själva knapparna */
+.nav-btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* Effekt när man hovrar (för musen över) */
+.nav-btn:hover {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border: 1px solid #ffffff;
+}
+
+.om-hero {
+    position: relative;
+    height: 60vh; 
+    background-image: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.6); 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: -50px auto 50px; 
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.om-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 40px;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.om-text h2 {
+    color: #1a1a1a;
+    border-left: 4px solid #d4af37;
+    padding-left: 15px;
+    margin-top: 30px;
+}
+
+.contact-card {
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.contact-card h2, .contact-card h3 {
+    margin-top: 0;
+    color: #1a1a1a;
+}
+
+.contact-sak {
+    margin-bottom: 15px;
+}
+
+.contact-sak strong {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.special-note span {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #888;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    background: #1a1a1a;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+
+    .om-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .container {
+        margin: 20px auto;
+    }
+
+    .contact-card {
+        padding: 20px;
+    }
+}
